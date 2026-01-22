@@ -1,0 +1,6 @@
+Name: ONYECHERE ADAKU
+Matric Number: 23CG034138
+Model Persistence Method Used: Joblib (Compressed)
+Machine Learning Algorithm Used: Random Forest Classifier
+Live URL: 
+GitHub Repository Link: https://github.com/Adaku-Onyechere07/Titanic_Project_ONYECHERE_23CG034138.git

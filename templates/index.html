@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Prediction System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            margin: 0;
+            padding: 0;
+        }
+
+        .app-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .app-title {
+            color: #203a43;
+        }
+
+        .app-subtitle {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .prediction-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-input,
+        .form-select {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #bbb;
+        }
+
+        .form-actions {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .predict-button {
+            padding: 12px 30px;
+            background: #203a43;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .predict-button:hover {
+            background: #0f2027;
+        }
+
+        .result-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .result-card {
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 8px;
+        }
+
+        .result-title {
+            color: #203a43;
+        }
+
+        .app-footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+
+    <header class="app-header">
+        <h1 class="app-title">Titanic Survival Prediction</h1>
+        <p class="app-subtitle">Predict passenger survival probability</p>
+    </header>
+
+    <form class="prediction-form">
+        <div class="form-group">
+            <label class="form-label">Passenger Class</label>
+            <select class="form-select">
+                <option>First</option>
+                <option>Second</option>
+                <option>Third</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Gender</label>
+            <select class="form-select">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Age</label>
+            <input type="number" class="form-input">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Fare</label>
+            <input type="number" step="any" class="form-input">
+        </div>
+
+        <div class="form-actions">
+            <button class="predict-button">Predict Survival</button>
+        </div>
+    </form>
+
+    <section class="result-section">
+        <div class="result-card">
+            <h2 class="result-title">Prediction Result</h2>
+            <p>Result will appear here</p>
+        </div>
+    </section>
+
+    <footer class="app-footer">
+        ML Demonstration Project
+    </footer>
+
+</div>
+
+</body>
+</html>
